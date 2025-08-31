@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Maroto</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="scriptfront.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login Maroto</h1>
+        <form action="http://localhost:3011/login" method="post" onsubmit="myform()" class="formId">
+            <input type="text" name="username00" placeholder="Usuário" autocomplete="username" id="userFront"/>
+            <input type="date" name="nascimento00" placeholder="calendario">
+            <input type="password" name="password00" placeholder="Senha" automplete="current-password" id="senhaFornt"/>
+            <p id="testeResultado"></p>
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="footer-text">Não tem conta? <a href="#">Crie uma agora</a></p>
+    </div>
+</body>
+</html>
