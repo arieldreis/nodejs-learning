@@ -1,0 +1,13 @@
+[
+    {
+    "id": 0,
+    "productName": "Fresh Avocado",
+    "image": "https://media.istockphoto.com/id/147442784/pt/foto/abacate-com-folhas.jpg?s=612x612&w=0&k=20&c=mux9csgnML7xhgvjoJFSR-4iOftFKBLWSWsUz3UDMMc=",
+    "from": "Spain",
+    "nutrients": "Vitamin B, Vitamin K",
+    "quantity": "4 🥑",
+    "price": "6.50",
+    "organic": true,
+    "description": "A ripe avocado is a creamy, delicious fruit that is packed with healthy fats, fiber, and essential nutrients. It has a smooth texture and a rich, buttery flavor that makes it a popular ingredient in many dishes."
+}
+]
