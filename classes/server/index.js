@@ -5,6 +5,8 @@ import { dirname, join } from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+const dataPath = fs.readFileSync(`${__dirname}/data.json`, 'utf-8');
+const dataObj = JSON.parse(dataPath);
 
 const server = http.createServer((req, res) => {
     const pathName = req.url;
@@ -13,11 +15,8 @@ const server = http.createServer((req, res) => {
     }else if (pathName === '/product'){
         res.end("<h1 style='font-family:Arial'>Product Page</h1>");
     }else if( pathName === '/api'){
-        fs.readFile(`${__dirname}/data.json`, 'utf-8', (err, data) => { 
-            const file = JSON.parse(data); 
-            res.writeHead(200, { 'Content-Type': 'application/json' });
-            res.end(data);
-        });
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(dataPath);
     } else {
         res.writeHead(404, {
             'content-type': 'text/html',
